@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{51B2628B-C202-4502-8FF7-A5C7561DD7D4}") = "DaeGirisLimitleyici", "DaeGirisLimitleyici.csproj", "{6227A65B-CE8C-4A75-AE5D-28257A56869A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6227A65B-CE8C-4A75-AE5D-28257A56869A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6227A65B-CE8C-4A75-AE5D-28257A56869A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6227A65B-CE8C-4A75-AE5D-28257A56869A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6227A65B-CE8C-4A75-AE5D-28257A56869A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
