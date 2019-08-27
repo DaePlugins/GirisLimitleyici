@@ -5,6 +5,7 @@
     <DebugSymbols>false</DebugSymbols>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
+
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>Kaynak Kütüphaneler\Assembly-CSharp.dll</HintPath>
