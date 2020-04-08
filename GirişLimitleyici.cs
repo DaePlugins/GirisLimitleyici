@@ -66,6 +66,17 @@ namespace DaeGirisLimitleyici
             }
 
             var profil = doküman["profile"];
+            if (profil["privacyState"] == null)
+            {
+                if (Configuration.Instance.AtmadanÖnceBekle)
+                {
+                    yield return new WaitForSeconds(Configuration.Instance.AtmaGecikmesi);
+                }
+
+                oyuncu.Kick(Translate("ProfilOluşturulmamış"));
+                yield break;
+            }
+
             if (profil["privacyState"].ParseString() == "private")
             {
                 if (Configuration.Instance.AtmadanÖnceBekle)
@@ -137,6 +148,7 @@ namespace DaeGirisLimitleyici
 
         public override TranslationList DefaultTranslations => new TranslationList
         {
+            { "ProfilOluşturulmamış", "Profilini oluşturmadan bu sunucuya giremezsin." },
             { "GizliProfil", "Profilin gizliyken bu sunucuya giremezsin." },
             { "HesapEskiliğiYetersiz", "Hesabının {0} gün daha eski olması gerekiyor." },
             { "OyunSaatleriGizli", "Oyun saatlerin gizliyken bu sunucuya giremezsin." },
